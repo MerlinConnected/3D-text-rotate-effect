@@ -1,8 +1,13 @@
+@font-face {
+  font-family: tagada;
+  src: url(./Weird\ Serif\ v0.3\ Demo\ -\ Regular.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: 'tagada', serif;
   text-decoration: none;
 }
 
@@ -81,4 +86,8 @@ body {
 
 span {
   font-size: 2rem;
+}
+
+.gap {
+  width: 1rem;
 }
