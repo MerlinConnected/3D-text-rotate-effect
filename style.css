@@ -56,16 +56,29 @@ body {
   will-change: tranform;
   transform-style: preserve-3d;
   transition: 0.5s;
-  transition-delay: calc(O.O5s * var(--index));
+  transition-delay: calc(0.05s * var(--index));
   transform-origin: bottom;
   display: inline-block;
 }
 
 .menu-item > div:nth-child(2) span {
-  will-change: tranform;
+  will-change: transform;
   transform-style: preserve-3d;
   transition: 0.5s;
-  transition-delay: calc(O.O5s * var(--index));
+  transition-delay: calc(0.05s * var(--index));
   transform-origin: top;
   display: inline-block;
+  transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+
+.menu-item:hover > div:nth-child(1) span {
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.menu-item:hover > div:nth-child(2) span {
+  transform: translate3d(0, 0%, 0) rotate(0deg);
+}
+
+span {
+  font-size: 2rem;
 }
